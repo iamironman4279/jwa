@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  tomcat:
+    build:
+      context: .
+    ports:
+      - "80:8080"  # Map port 80 of host to port 8080 of Tomcat container
+    restart: always
